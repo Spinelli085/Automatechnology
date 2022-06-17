@@ -14,6 +14,7 @@
         <picture>
             <a class="logo" href="./index.html"><img src="./img/logo.svg"alt="Logo de Automatechnology"></a>
         </picture>
+        
         <nav id="menu" class="banner">
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="./index.html">Inicio</a></li>
@@ -26,7 +27,7 @@
     </header>
     <main>  
         <section>
-            <article id="banner" class="container">
+            <article id="banner" class="container-ban">
                 <img class="container__img" width="100%" src="./img/banner.png" alt="Fotografia de un hombre trabajando con maquinaria">
             </article>
         </section>
@@ -34,15 +35,15 @@
             <div id="productos" class="highlights"> 
                 <h1 class="highlights__title">Productos destacados</h1>
                 <br>
-                <img class="highlights__item highlights-est" max-width="300px" src="./img/estrichado.jpg" alt="Maquina estrichadora">
+                <img class="highlights__item highlights-est img-rounded" max-width="300px" src="./img/estrichado.jpg" alt="Maquina estrichadora">
                 <h2 class="highlights__subtitle highlights-title-est">Estrichadora</h2>
                 <p class="highlights__text highlights-txt-est">Capacidad de estrichado: 25 Pallets por hora</p> 
                 <br>
-                <img class="highlights__item highlights-pal" width="300px" src="./img/paletizadora.jpg" alt="Maquina paletizadora">
+                <img class="highlights__item highlights-pal img-circle" width="300px" src="./img/paletizadora.jpg" alt="Maquina paletizadora">
                 <h2 class="highlights__subtitle highlights-title-pal">Paletizadora</h2>
                 <p class="highlights__text highlights-txt-pal">Capacidad de paletizado: 100 cajas por hora</p>
                 <br>
-                <img class="highlights__item highlights-pos" max-width="300px" src="./img/posicionadora.jpg" alt="Maquina posicionadora">                
+                <img class="highlights__item highlights-pos img-thumbnail" max-width="300px" src="./img/posicionadora.jpg" alt="Maquina posicionadora">                
                 <h2 class="highlights__subtitle highlights-title-pos">Posicionadora de envases</h2>
                 <p class="highlights__text highlights-txt-pos">Capacidad: Hasta 700 envases por hora</p>
             </div>
@@ -66,6 +67,29 @@
         <section>
             <div class="marcas">
                 <h2 class="marcas__title">Marcas con las que trabajamos</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/cliente_1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/cliente_2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/cliente_3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
+                      
                 <img width="100%" class="marcas__img" src="./img/marcas.jpg" alt="">
             </div>
         </section>
@@ -75,6 +99,17 @@
             <p class="end-page__item">© 2022 Automatechnology. Todos los derechos reservados. </p> 
             <p class="end-page__item"> Rodrigo Spinelli desktop design.</p> 
         </div>
+        <div class="dropdown">
+            <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Mapa de sitio
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                <li><a class="dropdown-item" href="./pages/empresa.html">Empresa</a></li>
+                <li><a class="dropdown-item" href="./pages/servicios.html">Servicios</a></li>
+                <li><a class="dropdown-item" href="./pages/login.html">Login</a></li>
+            </ul>
+          </div>
             <img class="end-page__img end-page__img--modifier" width="200px" src="./img/industria-argentina.png" alt="Industria argentina">
             <img class="end-page__img end-page__img--logo" width="300px" src="./img/logo.svg" alt="Logo de Automatechnology">
     </footer>
