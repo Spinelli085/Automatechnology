@@ -17,6 +17,21 @@ img {
   width: 100%; }
 
 /* PARTIALS */
+.end-page {
+  display: flex;
+  background-color: #E5E5E5;
+  border: 3px solid #2b2b2b;
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly; }
+  .end-page__item {
+    font-style: italic;
+    font-size: 16px; }
+  .end-page__img {
+    display: flex;
+    justify-content: center;
+    width: 15%; }
+
 header {
   display: flex;
   flex-direction: row;
