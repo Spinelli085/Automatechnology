@@ -1,3 +1,4 @@
+/*HEADER*/
 header {
     display: flex;
     flex-direction: row;
@@ -41,13 +42,14 @@ header {
         
         
         }
-        & :hover{
+        .menu__item :hover{
             background-color: $text-color;
             color: #E5E5E5;
             
         }
     }
 
+/*HEADER-END*/
 
 
 

@@ -1,0 +1,179 @@
+/*HOME*/
+.container-ban{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    
+    .container__img {
+    transition:all .5s ease-in-out;
+    }
+
+    &:hover{   
+    filter: saturate(120%);
+    }
+
+}
+
+.grilla{
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+    .highlights{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "highlights__title highlights__title highlights__title"
+        "highlights-est highlights-pal highlights-pos"
+        "highlights-title-est highlights-title-pal highlights-title-pos"
+        "highlights-txt-est highlights-txt-pal highlights-txt-pos";
+        grid-gap: 1rem;
+        align-items: start;
+        justify-items: center;
+        text-align: center;
+        .highlights__item{
+            border-radius: 16px;
+            border: 1px solid black;
+            box-shadow: 3px 3px grey;
+            transition:all .5s ease-in-out;
+        }
+        .highlights__item:hover{
+            filter: saturate(180%);
+            transform: scale(1.5,1.5);
+        }
+        .highlights__text{
+            font-size: 15px;
+            font-style: italic;
+            font-weight: normal;
+        }
+        .highlights__subtitle{
+            font-size: 19px;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+     
+        .highlights__title{
+            font-size: 50px;
+            text-align: center;
+            margin: 0 auto $spacing-medium;
+            font-family: $font-title;
+            grid-area: highlights__title;
+        }   
+        .highlights-est{
+            @extend .highlights__item;
+            grid-area: highlights-est;
+            max-width: 320px;
+        }
+        .highlights-pal{
+            @extend .highlights__item;
+            grid-area: highlights-pal;
+            max-width: 320px;
+            margin: auto;
+        }
+        .highlights-pos{
+            @extend .highlights__item;
+            grid-area: highlights-pos;
+            max-width: 320px;
+        }
+        .highlights-title-est{
+            @extend .highlights__subtitle;
+            grid-area: highlights-title-est;
+        }
+        .highlights-title-pal{
+            @extend .highlights__subtitle;
+            grid-area: highlights-title-pal;
+            margin: 0 auto;
+        }
+        .highlights-title-pos{
+            @extend .highlights__subtitle;
+            grid-area: highlights-title-pos;
+           
+    
+        }
+        .highlights-txt-est{
+            @extend .highlights__text;
+            grid-area: highlights-txt-est;
+        }
+        .highlights-txt-pal{
+            @extend .highlights__text;
+            grid-area: highlights-txt-pal;
+            margin: 0 auto;
+        }
+        .highlights-txt-pos{
+            @extend .highlights__text;
+            grid-area: highlights-txt-pos;
+          
+    
+        }
+      
+    }
+}
+
+.box{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 48px;
+   
+    .box__pic{
+        grid-column: 1 / 7;
+
+        .box__bar{
+            width: 120%;
+        }
+    
+        .box__bar--secondary{
+        @extend .box__bar;
+        margin-left: 40rem;
+        }
+
+    }
+
+    
+
+    .box__content{
+        display: flex;
+        grid-column: 7 / 12;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+
+            
+        .box__title{
+            text-align: center;   
+        }
+
+        .box__text{
+            font-size: 1.2rem;
+            text-align: center;
+            color: rgb(103, 103, 103);
+            
+        }
+
+        .box__img{
+            max-width: 20px;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+        }
+
+    }
+
+
+}
+.marcas__img{
+    width: 100%;
+
+}
+
+.marcas__title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px;
+    padding: 30px;
+    color: lightslategrey;
+}
+
+/*HOME-END*/
+

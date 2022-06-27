@@ -148,21 +148,6 @@ li a {
     width: 100%;
 }
 
-.container__item{
-    color: white;
-    width: 50rem;
-    display: block;
-    margin-right: 550px;
-    background-color: black;
-    position: relative;
-    bottom: 48rem;
-    left: 11rem;
-    padding: 5px;
-    font-size: var(--text-medium);
-    border-radius: 5px;
-    font-family: var(--font-principal);
-}
-
 .container__img {
     transition:all .5s ease-in-out;
 }
@@ -375,7 +360,7 @@ li a {
     
 }
 
-.box__img--gear{
+.box__img{
     max-width: 20px;
     animation-name: rotate;
     animation-iteration-count: infinite;
@@ -458,10 +443,6 @@ li a {
     }
 }
 
-.carousel{
-    max-width: 20%;
-    margin: 0 auto;
-}
 /*Marcas-end*/
 
 /*Endpage*/
@@ -598,15 +579,7 @@ li a {
 /*Empresa-end*/
 
 /*Contacto-start*/
-.title__text{
-    text-align: center;
-    text-shadow: 3px solid grey;
-    font-style: normal;
-    font-size: 50px;
-    font-weight: bold;
-    margin: 40px;
-    padding: 40px;
-}
+
 /*Contacto-end*/
 
 /*Servicios-start*/

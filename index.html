@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/translated.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Automatechnology</title>
 </head>
@@ -34,19 +35,19 @@
       <div id="productos" class="highlights"> 
         <h1 class="highlights__title">Productos destacados</h1>
         <div>
-          <img class="highlights__item highlights-est img-rounded" max-width="300px" src="./img/estrichado.jpg" alt="Maquina estrichadora">
-          <h2 class="highlights__subtitle highlights-title-est">Estrichadora</h2>
-          <p class="highlights__text highlights-txt-est">Capacidad de estrichado: 25 Pallets por hora</p> 
+          <img class="highlights-est" max-width="300px" src="./img/estrichado.jpg" alt="Maquina estrichadora">
+          <h2 class="highlights-title-est">Estrichadora</h2>
+          <p class="highlights-txt-est">Capacidad de estrichado: 25 Pallets por hora</p> 
         </div>
         <div>
-          <img class="highlights__item highlights-pal img-circle" width="300px" src="./img/paletizadora.jpg" alt="Maquina paletizadora">
-          <h2 class="highlights__subtitle highlights-title-pal">Paletizadora</h2>
-          <p class="highlights__text highlights-txt-pal">Capacidad de paletizado: 100 cajas por hora</p>
+          <img class="highlights-pal" width="300px" src="./img/paletizadora.jpg" alt="Maquina paletizadora">
+          <h2 class="highlights-title-pal">Paletizadora</h2>
+          <p class="highlights-txt-pal">Capacidad de paletizado: 100 cajas por hora</p>
         </div>
         <div>
-          <img class="highlights__item highlights-pos img-thumbnail" max-width="300px" src="./img/posicionadora.jpg" alt="Maquina posicionadora">                
-          <h2 class="highlights__subtitle highlights-title-pos">Posicionadora de envases</h2>
-          <p class="highlights__text highlights-txt-pos">Capacidad: Hasta 700 envases por hora</p>
+          <img class="highlights-pos" max-width="300px" src="./img/posicionadora.jpg" alt="Maquina posicionadora">                
+          <h2 class="highlights-title-pos">Posicionadora de envases</h2>
+          <p class="highlights-txt-pos">Capacidad: Hasta 700 envases por hora</p>
         </div>
       </div>
     </section>
@@ -54,22 +55,22 @@
       <article class="box grilla">
         <picture class="box__pic">
           <img class="box__bar" data-aos="fade-right" src="./img/barra-amarillo.png" alt="">
-          <img class="box__img" src="./img/banner-dos.jpg" alt="">
-          <img class="box__bar box__bar--secondary" data-aos="fade-left" src="./img/barra-amarilla.png" alt="">
+          <img class="box__banner" src="./img/banner-dos.jpg" alt="">
+          <img class="box__bar--secondary" data-aos="fade-left" src="./img/barra-amarilla.png" alt="">
         </picture>
         <div class="box__content">
           <div>
-            <img class="box__img--gear" src="./img/gear.png" alt="">
+            <img class="box__img" src="./img/gear.png" alt="">
             <h2 class="box__title">Proveemos tecnología, equipos y servicios líderes</h2> 
             <p class="box__text ">Nos especializamos en la fabricación de máquinas etiquetadoras, llenadoras,tapadoras, líneas y monobloques,ofreciendo siempre la más eficiente e inmediata respuesta</p>
           </div>
           <div>
-            <img class="box__img--gear" src="./img/gear.png" alt="">
+            <img class="box__img" src="./img/gear.png" alt="">
             <h2 class="box__title">Modernización / Actualización de Equipos</h2>
             <p class="box__text">Comercializamos sistemas, cabezales y máquinas etiquetadoras autoadhesivas, envasadoras, roscadoras y tapadoras.</p>
           </div>
           <div>
-            <img class="box__img--gear" src="./img/gear.png" alt="">
+            <img class="box__img" src="./img/gear.png" alt="">
             <h2 class="box__title">Servicio / Post-Venta</h2> 
             <p class="box__text">Poseemos el mejor servicio técnico. Cumpliendo las fechas de entrega y pautando visitas técnicas cuando se solicita.</p>
           </div>
@@ -79,30 +80,9 @@
     <section>
       <div class="marcas">
         <h2 class="marcas__title">Marcas con las que trabajamos</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/cliente_1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/cliente_2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/cliente_3.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-          <picture>
-            <img width="100%" class="marcas__img" src="./img/marcas.jpg" alt="">
-          </picture>
+        <picture>
+          <img width="100%" class="marcas__img" src="./img/marcas.jpg" alt="">
+        </picture>
       </div>
     </section>
   </main>     
