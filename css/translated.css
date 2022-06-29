@@ -19,7 +19,7 @@ img {
 /* Works on Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: black rgb(195, 255, 0); }
+  scrollbar-color: black #d4ff46; }
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -159,14 +159,17 @@ header {
   .grilla .highlights {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "highlights__title highlights__title highlights__title"
- "highlights-est highlights-pal highlights-pos"
- "highlights-title-est highlights-title-pal highlights-title-pos"
- "highlights-txt-est highlights-txt-pal highlights-txt-pos";
+    grid-template-areas: "highlights__title highlights__title highlights__title" "highlights-est highlights-pal highlights-pos" "highlights-title-est highlights-title-pal highlights-title-pos" "highlights-txt-est highlights-txt-pal highlights-txt-pos";
     grid-gap: 1rem;
     align-items: start;
     justify-items: center;
     text-align: center; }
+    .grilla .highlights .highlights__title {
+      font-size: 50px;
+      text-align: center;
+      margin: 2.4rem;
+      font-family: "Qualy";
+      grid-area: highlights__title; }
     .grilla .highlights .highlights__item, .grilla .highlights .highlights-est, .grilla .highlights .highlights-pal, .grilla .highlights .highlights-pos {
       border-radius: 16px;
       border: 1px solid black;
@@ -184,12 +187,6 @@ header {
       font-style: normal;
       font-weight: normal;
       text-decoration: underline; }
-    .grilla .highlights .highlights__title {
-      font-size: 50px;
-      text-align: center;
-      margin: 0 auto 2.4rem;
-      font-family: "Qualy";
-      grid-area: highlights__title; }
     .grilla .highlights .highlights-est {
       grid-area: highlights-est;
       max-width: 320px; }
