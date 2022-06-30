@@ -1,19 +1,16 @@
 /*FOOTER*/
 .end-page{
-    display: flex;
+    @include flex(row,space-evenly,center,0);
     background-color: $secondary;
     border: 3px solid #2b2b2b;
     height: 100px;
-    align-items: center;
-    justify-content: space-evenly;
     &__item{
         font-style: italic;
         font-size: 16px;
     }
     
     &__img{
-    display: flex;
-    justify-content: center;
+    @include flex(row,center,flex-start,0);
     width: 15%;
     }
 

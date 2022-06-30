@@ -4,6 +4,7 @@
 @import "./misc/variables";
 @import "./misc/normalize";
 @import "./misc/mixins";
+@import "./misc/keyframe";
 
 /* PARTIALS */
 
@@ -17,3 +18,6 @@
 @import "./views/login";
 @import "./views/servicios";
 @import "./views/home";
+
+/*Mediaquery*/
+@import "./misc/mediaquery";

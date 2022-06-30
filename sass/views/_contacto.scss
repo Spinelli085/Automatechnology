@@ -12,9 +12,7 @@
 }
 
 .buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex(row,space-evenly,center,0);
 }
 .contact{
     background-color: #f8f8f8;

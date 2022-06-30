@@ -131,17 +131,10 @@
 
     }
 
-    
-
     .box__content{
-        display: flex;
+        @include flex(column,center,flex-start,map-get($map: $spacings, $key: spacing-xsmall));
         grid-column: 7 / 12;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-top: map-get($map: $spacings, $key: spacing-xsmall);
-
-
-            
+           
         .box__title{
             text-align: center;   
         }
@@ -157,7 +150,7 @@
             max-width: 20px;
             animation-name: rotate;
             animation-iteration-count: infinite;
-            animation-duration: 2s;
+            animation-duration: 3s;
         }
 
     }

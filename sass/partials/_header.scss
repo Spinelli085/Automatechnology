@@ -1,9 +1,6 @@
 /*HEADER*/
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(row,space-around,center,1rem);
     background-color: $secondary;
     border: 3px solid black;
 
@@ -14,10 +11,9 @@ header {
         margin: 2rem;  
     }
     nav ul {
+        @include flex(row,space-between,flex-start,1rem);
         list-style-type: none;
-        display: flex;
-        justify-content: space-between;
-        gap: 1rem;
+    
     }
     
    

@@ -34,21 +34,35 @@ img {
   border: 3px solid #d4ff46; }
 
 /* Normalize-END */
+/*Mixins*/
+/*Mixins-end*/
+/*keyframes*/
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 /* PARTIALS */
 /*FOOTER*/
 .end-page {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0;
   background-color: #E5E5E5;
   border: 3px solid #2b2b2b;
-  height: 100px;
-  align-items: center;
-  justify-content: space-evenly; }
+  height: 100px; }
   .end-page__item {
     font-style: italic;
     font-size: 16px; }
   .end-page__img {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
+    gap: 0;
     width: 15%; }
 
 /*FOOTER-END*/
@@ -58,6 +72,7 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 1rem;
   background-color: #E5E5E5;
   border: 3px solid black; }
   header picture a img {
@@ -66,10 +81,12 @@ header {
     align-self: flex-start;
     margin: 2rem; }
   header nav ul {
-    list-style-type: none;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 1rem; }
+    align-items: flex-start;
+    gap: 1rem;
+    list-style-type: none; }
   header li a {
     font-family: "Qualy";
     list-style-type: none;
@@ -106,8 +123,10 @@ header {
 
 .buttons {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-evenly; }
+  gap: 0; }
 
 .contact {
   background-color: #f8f8f8; }
@@ -224,10 +243,11 @@ header {
       margin-left: 40rem; }
   .box .box__content {
     display: flex;
-    grid-column: 7 / 12;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 1rem; }
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    grid-column: 7 / 12; }
     .box .box__content .box__title {
       text-align: center; }
     .box .box__content .box__text {
@@ -238,7 +258,7 @@ header {
       max-width: 20px;
       animation-name: rotate;
       animation-iteration-count: infinite;
-      animation-duration: 2s; }
+      animation-duration: 3s; }
 
 .marcas__img {
   width: 100%; }
@@ -252,3 +272,160 @@ header {
   color: lightslategrey; }
 
 /*HOME-END*/
+/*Mediaquery*/
+/*Mediaquery*/
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary);
+    border: 3px solid black;
+    align-items: center; }
+  picture {
+    max-width: 150px;
+    margin-right: 70px; }
+  .banner {
+    margin-bottom: 10px; }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  picture a img {
+    max-width: 200px;
+    min-width: 100px;
+    align-self: center;
+    margin: 1rem 3rem; } }
+
+@media screen and (max-width: 800px) {
+  .highlights-txt-pos {
+    margin-left: 6rem; }
+  .highlights__subtitle, .grilla .highlights .highlights-title-est, .grilla .highlights .highlights-title-pal, .grilla .highlights .highlights-title-pos {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px 0; }
+  .highlights__subtitle, .grilla .highlights .highlights-title-est, .grilla .highlights .highlights-title-pal, .grilla .highlights .highlights-title-pos {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px 0; }
+  .highlights-pal {
+    max-width: 320px;
+    margin: auto; }
+  .highlights__subtitle, .grilla .highlights .highlights-title-est, .grilla .highlights .highlights-title-pal, .grilla .highlights .highlights-title-pos {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: center;
+    margin: 20px 0; }
+  .highlights__title {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font-title); }
+  .highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .highlights-pos {
+    margin: auto;
+    max-width: 320px; }
+  .highlights-est {
+    max-width: 320px;
+    margin: auto; } }
+
+@media screen and (max-width: 1100px) {
+  .box {
+    display: flex;
+    margin-top: 48px;
+    flex-direction: column; }
+  .box__title {
+    font-size: 1.5rem; }
+  .box__text {
+    font-size: 1.2rem;
+    margin: 0 5rem; }
+  .box__bar, .box .box__pic .box__bar--secondary {
+    width: 100%; }
+  .box__bar--secondary {
+    margin-left: 0rem; }
+  .box__content {
+    display: flex;
+    grid-column: 7 / 12;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center; }
+  .box__img--gear {
+    max-width: 20px;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    margin: 0 1%; } }
+
+@media screen and (max-width: 800px) {
+  picture {
+    max-width: 100%;
+    margin-right: 0px; } }
+
+@media screen and (max-width: 800px) {
+  .marcas__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    color: lightslategrey; } }
+
+@media screen and (max-width: 1100px) {
+  .end-page__item {
+    font-style: italic;
+    font-size: 10px; }
+  .end-page__text {
+    display: flex;
+    flex-direction: column; }
+  .end-page__img {
+    width: 15%; } }
+
+@media screen and (max-width: 800px) {
+  .end-page__img--logo {
+    max-width: 80px; }
+  .end-page__img--modifier {
+    max-width: 80px; }
+  .end-page__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 80px; }
+  .end-page {
+    display: flex;
+    background-color: var(--secondary);
+    border: 3px solid #2b2b2b;
+    height: 50px;
+    align-items: center; }
+  .end-page__item {
+    font-style: italic;
+    font-size: 0.1em; } }
+
+@media screen and (max-width: 800px) {
+  .end-page__img {
+    display: none; } }
+
+@media screen and (max-width: 600px) {
+  .empresa__text {
+    font-style: italic;
+    text-align: center;
+    font-size: 10px; } }
+
+@media screen and (max-width: 320px) {
+  .box .box__pic .box__bar--secondary {
+    margin: 0 3rem;
+    width: 80%; }
+  .box__bar, .box .box__pic .box__bar--secondary {
+    width: 80%; }
+  .box__banner {
+    width: 88%; }
+  .box__content {
+    width: 80%; } }

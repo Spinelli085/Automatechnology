@@ -472,19 +472,19 @@ li a {
 
 
 @media screen and ( max-width: 1100px){
-.end-page__item{
+    .end-page__item{
     font-style: italic;
     font-size: 10px;
-}
+    }
 
-.end-page__text{
+    .end-page__text{
     display: flex;
     flex-direction: column;
-}
+    }
 
-.end-page__img{
+    .end-page__img{
     width: 15%;
-}
+    }
 } 
 
 @media screen and ( max-width: 800px){
