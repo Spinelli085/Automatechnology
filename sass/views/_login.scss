@@ -1,0 +1,21 @@
+/*LOGIN*/
+
+.form-primary--mod{
+    justify-content: space-around;
+    background-color: #E5E5E5;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.form-title{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 35rem;
+}
+.form-control{
+    width: 70%;
+}
+.form-text{
+    font-size: $text-small;
+}

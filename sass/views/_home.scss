@@ -4,7 +4,7 @@
     margin: 0%;
     width: 100%;
     
-    .container__img {
+    .banner__img {
     transition:all .5s ease-in-out;
     }
 
@@ -17,7 +17,6 @@
 .grilla{
     max-width: 1200px;
     margin: 0 auto;
-
 
     .highlights{
         display: grid;
@@ -121,7 +120,7 @@
         grid-column: 1 / 7;
 
         .box__bar{
-            width: 120%;
+            width: 100%;
         }
     
         .box__bar--secondary{
