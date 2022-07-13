@@ -22,9 +22,6 @@
     max-width: 150px;
     margin-right: 70px;
     }
-    .banner {
-    margin-bottom: 10px;
-    }
     
     picture a img {
         max-width: 200px;
@@ -102,6 +99,7 @@
         display: flex;
         margin-top: 48px;
         flex-direction: column;
+        align-items: center;
     }
      
      .box__title{
@@ -169,6 +167,9 @@
     .end-page__img{
     display: none;
     }
+    .box__bar--secondary{
+        margin-left: 0%;
+    }
 } 
 
 @media screen and ( max-width: 800px){
@@ -176,6 +177,7 @@
     .btn{
         width: 15rem;
         height: 3rem;
+        margin: 0%;
     }
     .end-page__text {
         display: flex;
@@ -213,16 +215,25 @@
 
 @media screen and ( max-width: 320px) {
     .box .box__pic .box__bar--secondary {
-        margin: 0 3rem;
+        margin-left: 6rem;
         width: 80%;
     }
-    .box__bar{
+    .box .box__pic .box__bar{
         width: 80%;
     }
-    .box__banner{
-        width: 88%;
-    }
+    
     .box__content{
         width: 80%;
+    }
+}
+@media screen and ( max-width: 320px){
+    .highlights{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .marcas__title{
+        padding: 0%;
+        margin: 2rem auto;
+        font-size: map-get($map: $spacings , $key: spacing-medium );
     }
 }

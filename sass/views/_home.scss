@@ -65,17 +65,19 @@
             @extend .highlights__item;
             grid-area: highlights-est;
             max-width: 320px;
+            margin-bottom: 2rem;
         }
         .highlights-pal{
             @extend .highlights__item;
             grid-area: highlights-pal;
             max-width: 320px;
-            margin: auto;
+            margin-bottom: 2rem;
         }
         .highlights-pos{
             @extend .highlights__item;
             grid-area: highlights-pos;
             max-width: 320px;
+            margin-bottom: 2rem;
         }
         .highlights-title-est{
             @extend .highlights__subtitle;
@@ -133,6 +135,7 @@
     .box__content{
         @include flex(column,center,flex-start,map-get($map: $spacings, $key: spacing-xsmall));
         grid-column: 7 / 12;
+        margin: 0 1rem;
            
         .box__title{
             text-align: center;   
