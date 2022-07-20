@@ -237,3 +237,39 @@
         font-size: map-get($map: $spacings , $key: spacing-medium );
     }
 }
+@media screen and ( max-width: 1000px) {
+    .form-primary{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-3{
+        width: 100%;
+    }
+    
+}
+@media screen and ( max-width: 900px) {
+    .intro{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .container__bar--secondary{
+        margin: 0 auto;
+    }
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and ( max-width: 600px) {
+    .container__bar--secondary{
+    width: 70%;
+    }
+    .container__bar{
+    width: 70%;
+    }
+    .product__img{
+        width: 400px;
+    }
+}

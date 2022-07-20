@@ -121,12 +121,16 @@ header {
   margin: 0 auto;
   text-align: center; }
 
+.col-3 {
+  width: 50%; }
+
 .form-label {
   font-size: 2em;
   font-family: "Qualy"; }
 
 .label-form {
-  font-size: 1.4rem; }
+  font-size: 2rem;
+  margin: 1rem; }
 
 .form-primary {
   justify-content: space-around;
@@ -201,13 +205,21 @@ input {
 .form-title {
   border: 2px solid black;
   border-radius: 5px;
-  width: 35rem; }
+  width: 30rem;
+  height: 6rem;
+  margin: 5rem auto; }
+
+.form-title-secondary {
+  margin: 5rem auto; }
 
 .form-control {
   width: 70%; }
 
 .form-text {
   font-size: 2em; }
+
+input {
+  margin: 2rem auto; }
 
 .container__img {
   max-width: 30px;
@@ -547,3 +559,30 @@ input {
     padding: 0%;
     margin: 2rem auto;
     font-size: 2.4rem; } }
+
+@media screen and (max-width: 1000px) {
+  .form-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .col-3 {
+    width: 100%; } }
+
+@media screen and (max-width: 900px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+  .container__bar--secondary {
+    margin: 0 auto; }
+  .product {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .container__bar--secondary {
+    width: 70%; }
+  .container__bar, .container__bar--secondary {
+    width: 70%; }
+  .product__img {
+    width: 400px; } }

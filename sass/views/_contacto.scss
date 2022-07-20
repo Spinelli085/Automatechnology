@@ -13,6 +13,10 @@
 .mt-3{
     margin: 0 auto;
     text-align: center;
+
+}
+.col-3{
+    width: 50%;
 }
 .form-label{
     font-size: $text-small;
@@ -20,7 +24,8 @@
 
 }
 .label-form{
-    font-size: 1.4rem;
+    font-size: 2rem;
+    margin: 1rem;
 }
 .form-primary{
     justify-content: space-around;
