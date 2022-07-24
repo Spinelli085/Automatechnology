@@ -8,11 +8,14 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden; }
 
 body {
   font-family: "Amiko", sans-serif;
-  font-family: "Qualy"; }
+  font-family: "Qualy";
+  overflow-x: hidden; }
 
 img {
   width: 100%; }
@@ -380,7 +383,8 @@ main {
     grid-column: 7 / 12;
     margin: 0 1rem; }
     .box .box__content .box__title {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.5rem; }
     .box .box__content .box__text {
       font-size: 1.2rem;
       text-align: center;
@@ -471,26 +475,26 @@ main {
       max-width: 320px;
       margin: auto; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .box {
     display: flex;
     margin-top: 48px;
     flex-direction: column;
     align-items: center; }
-  .box__title {
-    font-size: 1.5rem; }
-  .box__text {
-    font-size: 1.2rem;
-    margin: 0 5rem; }
-  .box__bar, .box .box__pic .box__bar--secondary {
-    width: 100%;
-    margin: 0%; }
-  .box__content {
-    display: flex;
-    grid-column: 7 / 12;
-    flex-direction: column;
-    margin-top: 1rem;
-    align-items: center; }
+    .box .box__content {
+      display: flex;
+      grid-column: 7 / 12;
+      flex-direction: column;
+      margin-top: 1rem;
+      align-items: center; }
+    .box .box__title {
+      font-size: 1.5rem; }
+    .box .box__text {
+      font-size: 1.2rem;
+      margin: 0 5rem; }
+    .box .box__bar, .box .box__pic .box__bar--secondary {
+      width: 100%;
+      margin: 0%; }
   .box__img--gear {
     max-width: 20px;
     animation-name: rotate;

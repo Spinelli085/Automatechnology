@@ -93,36 +93,34 @@
   
 } 
 
-@media screen and ( max-width: 900px){
+@media screen and ( max-width: 1000px){
 
     .box{
         display: flex;
         margin-top: 48px;
         flex-direction: column;
         align-items: center;
+        .box__content {
+            display: flex;
+            grid-column: 7 / 12;
+            flex-direction: column;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        .box__title{
+            font-size: 1.5rem;  
+        }
+        .box__text{
+            font-size: 1.2rem;   
+            margin: 0 5rem;
+        }
+        .box__bar{
+            width: 100%;
+            margin: 0%;
+        
+        }
     }
      
-     .box__title{
-        font-size: 1.5rem;  
-    }
-    .box__text{
-        font-size: 1.2rem;   
-        margin: 0 5rem;
-    }
-    .box__bar{
-        width: 100%;
-        margin: 0%;
-    
-    }
-    
-
-    .box__content {
-        display: flex;
-        grid-column: 7 / 12;
-        flex-direction: column;
-        margin-top: 1rem;
-        align-items: center;
-    }
     .box__img--gear{
         max-width: 20px;
         animation-name: rotate;

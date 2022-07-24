@@ -8,11 +8,14 @@
 
 html {
     font-size: 62.5%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     font-family: $font-principal;
     font-family: $font-title;
+    overflow-x: hidden;
 }
 
 img {
