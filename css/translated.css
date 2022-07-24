@@ -11,12 +11,12 @@ html {
   font-size: 62.5%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: "Amiko", sans-serif;
-  font-family: "Qualy"; }
+  font-family: 'Amiko', sans-serif;
+  font-family: 'Qualy', sans-serif; }
 
 body {
-  font-family: "Amiko", sans-serif;
-  font-family: "Qualy";
+  font-family: 'Amiko', sans-serif;
+  font-family: 'Qualy', sans-serif;
   overflow-x: hidden; }
 
 img {
@@ -93,7 +93,7 @@ header {
     gap: 1rem;
     list-style-type: none; }
   header li a {
-    font-family: "Qualy";
+    font-family: "Qualy", sans-serif;
     list-style-type: none;
     color: #2b2b2b;
     text-decoration: none;
@@ -114,12 +114,12 @@ header {
 /*Contacto*/
 .form-title {
   text-align: center;
-  font-family: "Qualy";
+  font-family: "Qualy", sans-serif;
   font-size: 4.8em;
   margin-top: 2.4rem; }
 
 .form-title-secondary {
-  font-family: "Qualy";
+  font-family: "Qualy", sans-serif;
   font-size: 2.4em; }
 
 .mt-3 {
@@ -131,7 +131,7 @@ header {
 
 .form-label {
   font-size: 2em;
-  font-family: "Qualy"; }
+  font-family: "Qualy", sans-serif; }
 
 .label-form {
   font-size: 2rem;
@@ -160,7 +160,7 @@ header {
   font-size: 1.4rem;
   text-align: center;
   margin: 2rem;
-  font-family: "Qualy"; }
+  font-family: "Qualy", sans-serif; }
 
 input {
   margin: 2rem 0; }
@@ -318,7 +318,7 @@ main {
       font-size: 50px;
       text-align: center;
       margin: 2.4rem;
-      font-family: "Qualy";
+      font-family: "Qualy", sans-serif;
       grid-area: highlights__title; }
     .grilla .highlights .highlights__item, .grilla .highlights .highlights-est, .grilla .highlights .highlights-pal, .grilla .highlights .highlights-pos {
       border-radius: 16px;
@@ -468,7 +468,7 @@ main {
       font-size: 20px;
       margin-top: 20px;
       text-align: center;
-      font-family: "Qualy"; }
+      font-family: "Qualy", sans-serif; }
     .grilla .highlights .highlights-pos {
       margin: auto;
       max-width: 320px; }
