@@ -10,7 +10,9 @@
 html {
   font-size: 62.5%;
   max-width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Amiko", sans-serif;
+  font-family: "Qualy"; }
 
 body {
   font-family: "Amiko", sans-serif;
@@ -25,7 +27,6 @@ img {
   scrollbar-width: thin;
   scrollbar-color: black #d4ff46; }
 
-/* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 12px; }
 

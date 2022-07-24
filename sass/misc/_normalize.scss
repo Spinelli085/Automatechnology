@@ -10,6 +10,8 @@ html {
     font-size: 62.5%;
     max-width: 100%;
     overflow-x: hidden;
+    font-family: $font-principal;
+    font-family: $font-title;
 }
 
 body {
@@ -22,12 +24,11 @@ img {
     width: 100%;
 }
 /* Works on Firefox */
-* {
+ * {
     scrollbar-width: thin;
     scrollbar-color: rgb(0, 0, 0) rgb(212, 255, 70);
   }
   
-  /* Works on Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 12px;
   }
