@@ -173,9 +173,8 @@
 @media screen and ( max-width: 800px){
 
     .btn{
-        width: 15rem;
         height: 3rem;
-        margin: 0%;
+        margin: 1rem;
     }
     .end-page__text {
         display: flex;
@@ -281,4 +280,11 @@
     .art-product{
         margin: 0 auto;
     }
+}
+@media screen and (max-width: 770px) {
+    .col-9{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
