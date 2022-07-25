@@ -21,7 +21,10 @@ html {
 body {
   font-family: 'Amiko', sans-serif;
   font-family: 'Qualy', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; }
 
 img {
   width: 100%; }
@@ -72,7 +75,7 @@ img {
     justify-content: center;
     align-items: flex-start;
     gap: 0;
-    width: 15%; }
+    max-width: 200px; }
 
 /*FOOTER-END*/
 /*HEADER*/
